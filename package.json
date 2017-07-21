@@ -1,0 +1,31 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "pretty-bytes": "^2.0.1"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.0.0",
+    "electron": "^1.6.11",
+    "electron-builder": "^19.16.1",
+    "electron-packager": "^8.7.2"
+  },
+  "scripts": {
+    "start": "electron main.js",
+    "build-mac": "electron-builder --mac -c='electron-builder.json'",
+    "build-win": "electron-packager ./ doctor-web --platform=win32 --arch=ia32 --overwrite"
+  },
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "node": {
+    "__dirname": false,
+    "__filename": false
+  }
+}

@@ -1,0 +1,13 @@
+.DS_Store
+public/
+node_modules/
+*.swp
+*.log
+.idea/
+.cache/
+*.Thumbs.db
+dist/
+electron-app-win32-ia32/
+electron-app-win32-x64/
+.uglifyJsCache
+compile/

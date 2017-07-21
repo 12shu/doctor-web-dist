@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-Hans">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="renderer" content="webkit" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>心之力</title>
+  <script
+    src="https://og6593g2z.qnssl.com/fundebug.0.0.4.min.js"
+    apikey="5170afbab437d740bd40af1cdaf03b58345130ff938c5cf6207fce9b8a620e6f">
+  </script>
+</head>
+<body>
+  <div id="wrapper"></div>
+  <script>
+    const {ipcRenderer} = require('electron');
+    const updateOnlineStatus = () => {
+      ipcRenderer.send('online-status-changed', navigator.onLine ? 'online' : 'offline')
+    };
+    window.addEventListener('online',  updateOnlineStatus)
+    window.addEventListener('offline',  updateOnlineStatus)
+    updateOnlineStatus();
+  </script>
+  <script type="text/javascript" src="./assets/js/vendor.6f46cbbe.js"></script>
+  <script type="text/javascript" src="./assets/js/app.78dda01263c87c74382d.js"></script>
+</body>
+</html>
