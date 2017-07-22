@@ -15,7 +15,9 @@
   "scripts": {
     "start": "electron main.js",
     "build-mac": "electron-builder --mac -c='electron-builder.json'",
-    "build-win": "electron-packager ./ doctor-web --platform=win32 --arch=ia32 --overwrite"
+    "build-win": "electron-builder --win32 -c='electron-builder.json'",
+    "pack-mac": "electron-packager ./ doctor-web --platform=darwin --overwrite",
+    "pack-win": "electron-packager ./ doctor-web --platform=win32 --arch=ia32 --overwrite"
   },
   "author": "",
   "license": "ISC",

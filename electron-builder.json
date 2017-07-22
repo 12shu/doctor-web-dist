@@ -1,6 +1,5 @@
 {
   "productName": "doctor-web",
-  "artifactName": "doctor-webV1.2.0",
   "compression" : "normal",
   "icon": "./icon.icns",
   "target": "dmg"
