@@ -1,7 +1,9 @@
 {
-  "name": "electron-app",
-  "version": "1.0.0",
-  "description": "",
+  "name": "doctor-web",
+  "productName": "doctor-web",
+  "version": "1.2.0",
+  "description": "医生端",
+  "author": "吴晓然",
   "main": "main.js",
   "dependencies": {
     "pretty-bytes": "^2.0.1"
@@ -13,10 +15,10 @@
     "electron-packager": "^8.7.2"
   },
   "scripts": {
-    "start": "electron main.js",
+    "start": "electron ./src/main.js",
     "build-mac": "electron-builder --mac -c='electron-builder.json'",
+    "pack-mac": "electron-packager ./src doctor-web --platform=darwin --icon=./icon.icns --out=../electron_build --overwrite",
     "build-win": "electron-builder --win32 -c='electron-builder.json'",
-    "pack-mac": "electron-packager ./ doctor-web --platform=darwin --overwrite",
     "pack-win": "electron-packager ./ doctor-web --platform=win32 --arch=ia32 --overwrite"
   },
   "author": "",

@@ -1,6 +1,6 @@
 {
   "productName": "doctor-web",
-  "compression" : "normal",
+  "compression": "normal",
   "icon": "./icon.icns",
-  "target": "dmg"
+  "target": ["dmg"]
 }
