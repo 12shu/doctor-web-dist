@@ -19,7 +19,8 @@
     "build-mac": "electron-builder --mac -c='electron-builder.json'",
     "pack-mac": "electron-packager ./src doctor-web --platform=darwin --icon=./icon.icns --out=../electron_build --overwrite",
     "build-win": "electron-builder --ia32 --win -c='electron-builder-win.json'",
-    "pack-win": "electron-packager ./ doctor-web --platform=win32 --arch=ia32 --overwrite"
+    "pack-win": "electron-packager ./ doctor-web --platform=win32 --arch=ia32 --overwrite",
+    "inno-win": "electron-windows-inno-installer ./example.iss --platform win32-ia32 --icon ./256X256.ico"
   },
   "license": "ISC",
   "config": {
