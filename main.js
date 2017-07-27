@@ -24,7 +24,7 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow(
     {
       icon: './512x512.png',
-      width: 1200,
+      width: 1300,
       "min-width": 1200,
       center: true,
       resizable: true,
@@ -32,9 +32,9 @@ app.on('ready', function() {
     });
 
   // 加载应用的 index.html
-  mainWindow.loadURL('file://' + __dirname + '/src/index.html');
+  // mainWindow.loadURL('file://' + __dirname + '/src/index.html');
   // mainWindow.loadURL('https://ys.xinzhili.cn');
-  // mainWindow.loadURL('http://xzl-doctor-web-dev.s3-website.cn-north-1.amazonaws.com.cn/');
+  mainWindow.loadURL('http://xzl-doctor-web-dev.s3-website.cn-north-1.amazonaws.com.cn/');
 
   // 当 window 被关闭，这个事件会被发出
   mainWindow.on('closed', function() {

@@ -1,6 +1,5 @@
 {
   "productName": "医生端 Dev版",
   "compression": "normal",
-  "icon": "./icon.icns",
-  "target": ["dmg"]
+  "icon": "./256X256.ico"
 }

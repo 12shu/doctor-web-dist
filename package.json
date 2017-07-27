@@ -1,9 +1,9 @@
 {
   "name": "doctor-web",
-  "productName": "doctor-web",
+  "productName": "医生端 Dev版",
   "version": "1.2.0",
   "description": "医生端",
-  "author": "吴晓然",
+  "author": "杭州翼心科技有限公司",
   "main": "main.js",
   "dependencies": {
     "pretty-bytes": "^2.0.1"
@@ -18,10 +18,9 @@
     "start": "electron ./src/main.js",
     "build-mac": "electron-builder --mac -c='electron-builder.json'",
     "pack-mac": "electron-packager ./src doctor-web --platform=darwin --icon=./icon.icns --out=../electron_build --overwrite",
-    "build-win": "electron-builder --win32 -c='electron-builder.json'",
+    "build-win": "electron-builder --ia32 --win -c='electron-builder-win.json'",
     "pack-win": "electron-packager ./ doctor-web --platform=win32 --arch=ia32 --overwrite"
   },
-  "author": "",
   "license": "ISC",
   "config": {
     "commitizen": {
